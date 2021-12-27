@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storage</title>
+  <script>
+        const localCounter = () => {
+        localStorage.getItem("counter")
+         ? localStorage.setItem("counter", parseInt(localStorage.getItem("counter"))+1)
+         : localStorage.setItem("counter", 1);
+         window.location.reload();
+    }
+
+    const sessionCounter = () => {
+        sessionStorage.getItem("counter")
+        ? sessionStorage.setItem("counter", parseInt(sessionStorage.getItem("counter"))+1)
+        : sessionStorage.setItem("counter", 1);
+        window.location.reload();
+    }
+  </script>
+  <style>
+      body {
+          text-align: center;
+      }
+  </style>
+</head>
+<body>
+  <h2>Local Storage: <span id="local"></span></h2>
+  
+  <h2>Session Storage: <span id="session"></span></h2>
+  
+  <button onclick="localCounter(), sessionCounter()" style="background-color: rgb(22, 63, 243); color:white; padding: 5px 15px;">Click</button>
+  <script>
+    document.querySelector("#local").innerHTML = localStorage.getItem("counter");
+    document.querySelector("#session").innerHTML = sessionStorage.getItem("counter");
+  </script>
+</body>
+</html>
