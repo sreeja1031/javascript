@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\stylesheet.css">
+    <title>ZemosoRestaurant</title>
+</head>
+<body>
+    <div class="layout">
+        <div class="tables">
+            <h2>Tables</h2>
+            <div class="table-num">
+                <input type="text" class="table-search" placeholder="Search table">
+                
+                <div id="table1" class="table">
+                    <h1>Table-1</h1>
+                    <p>Rs.0 | Total items:0</p>
+                </div>
+                <div id="table2" class="table">
+                    <h1>Table-2</h1>
+                    <p>Rs.0 | Total items:0</p>
+                </div>
+                <div id="table3" class="table">
+                    <h1>Table-3</h1>
+                    <p>Rs.0 | Total items:0</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <h2>Menu</h2>
+            <div class="food-menu">
+                <input type="text" class="menu-search" placeholder="Search menu...by course..by food">
+            </div> 
+        </div>
+    </div>
+    <div class="overlay hidden">
+        <div class="bill">
+                <h3 class="bill-head"></h3>
+                <table class="bill-table">
+                   
+                </table>
+                <span id="generate-bill">CLOSE SESSION (GENERATE BILL)</span>
+        </div>
+    </div>
+    <script src="js\rest.js"></script>
+    <script src="js\tableSearch.js"></script>
+    <script src="js\menuSearch.js"></script>
+</body>
+</html>
