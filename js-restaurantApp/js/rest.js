@@ -6,7 +6,7 @@ const url = "data.json";
 //Total containing row in bill window
 let totalRow = document.createElement('tr');
 let totalCol = document.createElement("td");
-totalCol.colSpan = "4"
+totalCol.colSpan = "4";
 totalCol.style.textAlign = "center";
 totalRow.appendChild(totalCol);
 
@@ -199,20 +199,22 @@ tablesList.forEach(table => {
         });
 
         const clickableGenerateBill = document.getElementById("generate-bill");
-        clickableGenerateBill.addEventListener("click", () => {
+        clickableGenerateBill.addEventListener("click", function () {
             overlay.style.visibility = "hidden";
             table.style.backgroundColor = "";
             billWindowHeading.innerHTML = "";
             billWindow.innerHTML = "";
-        })
-
-
-    
+            let bill=tableTotal[tableIdentifier];
+            if(bill!=0) {
+                alert("Total Bill of the Table: "+bill);
+            }
+            tableData[tableIdentifier].length=0;
+            tableTotal[tableIdentifier] = 0;
+            table.querySelector("p").textContent = `Rs.`+tableTotal[tableIdentifier]+" | Total items:"+tableData[tableIdentifier].length;
+        }, false);
 
 
         function addFoodItemsToBillWindow(){
-
-           
 
             for(let index = 0;index < tableData[tableIdentifier].length ; index++){
 

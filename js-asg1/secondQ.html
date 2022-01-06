@@ -5,16 +5,18 @@
     <title>Question 2</title>
 </head>
 <body>
-    <h1>An arrow function takes two arguments firstName and lastName and returns a 2 letter string that represents the first letter of both the arguments. For the arguments Roger and Waters, the function returns ‘RW’. Write this function.
-        Submit the github link to the code</h1>
+    <p>An arrow function takes two arguments firstName and lastName and returns a 2 letter string that represents the first letter of both the arguments. For the arguments Roger and Waters, the function returns ‘RW’. Write this function.
+        Submit the github link to the code</p>
     <script>
-        function arrow(firstName, lastName) {
-            var res = firstName[0].toUpperCase()+lastName[0].toUpperCase();
-            return res;
-        }
+        
         var x = prompt("Enter Your First Name");
         var y = prompt("Enter Your Second Name")
-        console.log(arrow(x, y));
+        let Function = (firstName, lastName) => 
+        {
+            var res = firstName[0].toUpperCase()+lastName[0].toUpperCase();
+            console.log(res);
+        }
+        Function(x,y);
     </script>
 </body>
 </html>

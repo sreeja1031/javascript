@@ -167,3 +167,6 @@ td,th{
     left: 60%;
     cursor: pointer;
 }
+i{
+    visibility: hidden;
+}

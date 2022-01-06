@@ -3,28 +3,45 @@
         "name":"Crusty Garlic Focaccia with Melted Cheese",
         "price":105.00,
         "label":".Rs",
-        "id":"item1"
+        "id":"item1",
+        "course":"entree"
     },
     
     {
         "name":"French Fries",
         "label":".Rs",
         "price":105.00,
-        "id":"item2"
+        "id":"item2",
+        "course":"entree"
     },
 
     {
         "name":"Home Country Fries with Hearbs & Chilli Flakes",
         "label":".Rs",
         "price":105.00,
-        "id":"item3"
+        "id":"item3",
+        "course":"appetizers"
     },
-
     {
         "name":"French Fries with Cheese & Chilli Flakes",
         "label":".Rs",
         "price":135.00,
-        "id":"item4"
+        "id":"item4",
+        "course":"appetizers"
 
+    },
+    {
+        "name":"Kesari Kulfi",
+        "label":".Rs",
+        "price":60.00,
+        "id":"item5",
+        "course":"dessert"
+    },
+    {
+        "name":"Caramel Butterscotch Pudding",
+        "label":".Rs",
+        "price":80.00,
+        "id":"item6",
+        "course":"dessert"
     }
 ]
